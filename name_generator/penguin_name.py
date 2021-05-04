@@ -8,7 +8,7 @@ penguin_converter = {
     "July": "Private",
     "August": "King",
     "September": "Pingu",
-    "October": "Emperor",
+    "October": "Feathers McGraw",
     "November": "Chocolatey",
     "December": "Ice Cold"
 }
