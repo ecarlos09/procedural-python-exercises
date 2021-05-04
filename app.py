@@ -26,12 +26,13 @@ def run():
         result = handle_dragon_generator(name, month) if animal == 'dragon' else handle_penguin_generator(name, month)
         print(f"\nYour {animal} name is: {result}\n")
     except Exception as e:
-        # pdb.set_trace()
+        pdb.set_trace()
         print("\nTerribly sorry, there's been an error!\n")
     finally:
         print("\nThanks for using our animal name generator!!\n")
     
 def handle_dragon_generator(name, month):
+    # pdb.set_trace()
     func = getattr(name_generator.dragon_name, user_dragon)
     result = func(name, month)
     return result
