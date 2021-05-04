@@ -23,23 +23,23 @@ def run():
         name = get_user_name()
         month = get_user_birth_month()
         animal = get_user_animal()
-        result = handle_dragon_generator(name, month) if animal == 'dragon' else handle_penguin_generator(name, month)
-        print(f"\nYour {animal} name is: {result}\n")
+        result = handle_dragon_generator(month) if animal == 'dragon' else handle_penguin_generator(month)
+        print(f"\nHey {name}, your {animal} name is: {result}\n")
     except Exception as e:
         pdb.set_trace()
         print("\nTerribly sorry, there's been an error!\n")
     finally:
         print("\nThanks for using our animal name generator!!\n")
     
-def handle_dragon_generator(name, month):
+def handle_dragon_generator(month):
     # pdb.set_trace()
     func = getattr(name_generator.dragon_name, user_dragon)
-    result = func(name, month)
+    result = func(month)
     return result
 
-def handle_penguin_generator(name, month):
+def handle_penguin_generator(month):
     func = getattr(name_generator.penguin_name, user_penguin)
-    result = func(name, month)
+    result = func(month)
     return result
 
 if __name__ == "__main__":

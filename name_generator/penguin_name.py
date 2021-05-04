@@ -13,6 +13,6 @@ penguin_converter = {
     "December": "Ice Cold"
 }
 
-def user_penguin(first_name, birth_month):
-    penguin_name = penguin_converter[f"{birth_month}"]
+def user_penguin(birth_month):
+    penguin_name = penguin_converter[birth_month]
     return penguin_name
