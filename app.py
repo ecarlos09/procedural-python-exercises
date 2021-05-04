@@ -33,12 +33,12 @@ def run():
     
 def handle_dragon_generator(month):
     # pdb.set_trace()
-    func = getattr(name_generator.dragon_name, user_dragon)
+    func = getattr(name_generator.dragon_name, 'user_dragon')
     result = func(month)
     return result
 
 def handle_penguin_generator(month):
-    func = getattr(name_generator.penguin_name, user_penguin)
+    func = getattr(name_generator.penguin_name, 'user_penguin')
     result = func(month)
     return result
 
