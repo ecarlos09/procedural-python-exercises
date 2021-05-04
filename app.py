@@ -17,6 +17,9 @@ def get_user_animal():
     animal = input("\nFinally, would you like to have a dragon name, or a penguin name? Type 'dragon' or 'penguin'.\n")
     return animal
 
+def print_result(name, animal, result):
+    print(f"\nHey {name}, your {animal} name is: {result}\n")
+
 def run():
     clear_screen()
     try:
@@ -24,9 +27,9 @@ def run():
         month = get_user_birth_month()
         animal = get_user_animal()
         result = handle_dragon_generator(month) if animal == 'dragon' else handle_penguin_generator(month)
-        print(f"\nHey {name}, your {animal} name is: {result}\n")
+        print_result(name, animal, result)
     except Exception as e:
-        pdb.set_trace()
+        # pdb.set_trace()
         print("\nTerribly sorry, there's been an error!\n")
     finally:
         print("\nThanks for using our animal name generator!!\n")
