@@ -14,5 +14,5 @@ dragon_converter = {
 }
 
 def user_dragon(first_name, birth_month):
-    dragon_name = dragon_converter[birth_month]
+    dragon_name = dragon_converter[f"{birth_month}"]
     return dragon_name

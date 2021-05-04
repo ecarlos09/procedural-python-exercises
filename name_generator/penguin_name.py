@@ -14,5 +14,5 @@ penguin_converter = {
 }
 
 def user_penguin(first_name, birth_month):
-    penguin_name = penguin_converter[birth_month]
+    penguin_name = penguin_converter[f"{birth_month}"]
     return penguin_name
