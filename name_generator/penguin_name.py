@@ -1,5 +1,5 @@
 penguin_converter = {
-    "January": "Mumble ",
+    "January": "Mumble",
     "February": "Squeak",
     "March": "Skipper",
     "April": "Gloria",
